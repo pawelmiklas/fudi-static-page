@@ -1,10 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    text-align: center;
-}
-
-img {
-    display: block;
-    margin: 50px auto;
+@import "partials/variables";
+@import "partials/mixins";
+header {
+    @include background-image("header-bg.png", 50% 50%, cover);
+    height: 800px;
+    width: 100%;
 }
