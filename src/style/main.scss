@@ -1,8 +1,194 @@
 @import "~bootstrap/scss/bootstrap";
 @import "partials/variables";
 @import "partials/mixins";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+body {
+    font-family: $fontMain;
+}
+
+.line {
+    width: 90px;
+    height: 1px;
+    background-color: $orangeColor;
+    display: block;
+}
+
+.fixed-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 header {
-    @include background-image("header-bg.png", 50% 50%, cover);
+    @include background-image("header-bg.png",
+    50% 50%,
+    cover);
     height: 800px;
     width: 100%;
+    #banner {
+        height: 85%;
+        #fixed-font {
+            font-family: $fontSecond;
+            font-style: italic;
+            font-size: 36px;
+            font-weight: bold;
+            opacity: 0.7;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 100px;
+            font-weight: bold;
+            letter-spacing: 9px;
+        }
+        button {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 1.2em 5em;
+            border: 3px solid white;
+        }
+    }
+}
+
+#cards {
+    min-height: 435px !important; // height: 100%;
+    // height: auto;
+    .container {
+        // height: 435px;
+        min-height: 435px;
+    }
+    .card {
+        height: 300px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid $blackColor;
+    }
+}
+
+#aplication {
+    .container {
+        min-height: 880px;
+    }
+    min-height: 880px;
+    width: 100%;
+    background-color: $grayColor;
+    .aplication__info {
+        max-width: 550px;
+        margin-right: auto;
+        padding-top: 6em;
+        img {
+            cursor: pointer;
+        }
+    }
+    .img-iphone {
+        margin-left: -2em;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+#review {
+    width: 100%;
+    height: 465px;
+    background-color: $violetColor;
+    position: relative;
+    .container {
+        min-height: 465px;
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+        .carousel-inner {
+            // min-height: 465px;
+            .carousel-item {
+                min-height: 465px;
+            }
+            .fixed-height {
+                min-height: 465px;
+            }
+        }
+    }
+    &::before {
+        content: url(/static/carousel-bg.png);
+        position: absolute;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+#cuisines {
+    width: 100%;
+    .container__title {
+        min-height: 165px;
+    }
+    .container__counter {
+        min-height: 180px;
+        .row {
+            min-height: 180px;
+        }
+    }
+    .cuisines__banner {
+        width: 100%;
+        .item__grid {
+            height: 225px;
+            h3 {
+                font-size: 36px;
+                letter-spacing: 3px;
+            }
+            p {
+                font-family: $fontSecond;
+                font-style: italic;
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+        }
+        .item__grid:nth-child(9) {
+            @include background-image("cuisines-8.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(8) {
+            @include background-image("cuisines-7.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(7) {
+            @include background-image("cuisines-6.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(6) {
+            @include background-image("cuisines-5.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(4) {
+            @include background-image("cuisines-4.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(3) {
+            @include background-image("cuisines-3.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(2) {
+            @include background-image("cuisines-2.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(1) {
+            @include background-image("cuisines-1.png",
+            50% 50%,
+            cover);
+        }
+        .item__grid:nth-child(9) {
+            @include background-image("cuisines-8.png",
+            50% 50%,
+            cover);
+        }
+    }
 }
