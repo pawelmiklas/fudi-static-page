@@ -27,7 +27,7 @@
       <div class="text-light d-flex justify-content-center align-items-center flex-column text-center" id="banner">
         <h3 id="fixed-font">Find your Favourite</h3>
         <h1 class="text-uppercase">recipes</h1>
-        <button type="button" class="btn btn-outline-light m-4">GET STARTED</button>
+        <button data-aos="flip-left" type="button" class="btn btn-outline-light m-4">GET STARTED</button>
         <p class="text-uppercase mt-3">or send your own recipes and <b><u> get rewarded</u></b>!</p>
       </div>
     </div>
@@ -36,7 +36,8 @@
     <section id="cards">
       <div class="container d-flex align-items-center justify-content-center">
         <div class="row w-100">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="150">
             <div class="card border-0">
               <div class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="circle d-flex justify-content-center align-items-center">
@@ -50,7 +51,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="250">
             <div class="card border-0">
               <div class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="circle d-flex justify-content-center align-items-center">
@@ -64,7 +66,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="350">
             <div class="card border-0">
               <div class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="circle d-flex justify-content-center align-items-center">
@@ -84,10 +87,12 @@
     <section id="aplication">
       <div class="container d-flex align-items-end">
         <div class="row w-100">
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-md-2 order-sm-2 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
             <img src="static/iphone.png" alt="iphone" class="img-iphone" />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-md-1 order-sm-1 order-1 order-lg-2 " data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">
             <div class="aplication__info">
               <h4 class="fixed-title text-uppercase">introducing the fudi app</h4>
               <span class="line mb-3"></span>
@@ -124,25 +129,31 @@
             <div class="carousel-item active">
               <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
                 <img src="static/face.png" alt="face" />
-                <h4>“I am so happy because I found this recipe, and it just made my life easier. <br />
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
                   Thanks so much for sharing!”</h4>
-                <p>- Michael Dawson, San Francisco, CA -</p>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
                 <img src="static/face.png" alt="face" />
-                <h4>“I am so happy because I found this recipe, and it just made my life easier. <br />
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
                   Thanks so much for sharing!”</h4>
-                <p>- Michael Dawson, San Francisco, CA -</p>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
                 <img src="static/face.png" alt="face" />
-                <h4>“I am so happy because I found this recipe, and it just made my life easier. <br />
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
                   Thanks so much for sharing!”</h4>
-                <p>- Michael Dawson, San Francisco, CA -</p>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
               </div>
             </div>
           </div>
@@ -162,7 +173,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
             <p class="text-capitalize text-white">27 recipes</p>
-            <h3 class="text-uppercase font-weight-bold text-white">steak house</h3>
+            <h3 class="text-uppercase font-weight-bold text-white text-center">steak house</h3>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
             <p class="text-capitalize text-white">1,412 recipes</p>
@@ -191,32 +202,36 @@
           </div>
         </div>
       </div>
-      <div class="container container__counter">
-        <div class="row w-100">
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+      <div class="container container__counter pt-3 pb-3 container__countup">
+        <div class="row w-100 pt-3 pb-3">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
             <h3 class="font-weight-bold">23,203</h3>
-            <p class="text-capitalize font-weight-light">recipes avaliable</p>
+            <p class="text-capitalize font-weight-light mb-0">recipes avaliable</p>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
             <h3 class="font-weight-bold">410,190</h3>
-            <p class="text-capitalize font-weight-light">active users</p>
+            <p class="text-capitalize font-weight-light mb-0">active users</p>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
             <h3 class="font-weight-bold">891,640</h3>
-            <p class="text-capitalize font-weight-light">positive reviews</p>
+            <p class="text-capitalize font-weight-light mb-0">positive reviews</p>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
             <h3 class="font-weight-bold">56,120</h3>
-            <p class="text-capitalize font-weight-light">photos & vides</p>
+            <p class="text-capitalize font-weight-light mb-0">photos & vides</p>
           </div>
-          <div class="col d-flex flex-column justify-content-center align-items-center">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
             <h3 class="font-weight-bold">3,182</h3>
-            <p class="font-weight-light">Spices and Herbs</p>
+            <p class="font-weight-light mb-0">Spices and Herbs</p>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="text-muted m-0 mr-3">&copy;2018 Fudi All Rights Reserved</p>
+        <p class="text-muted m-0">Pawel Miklas</p>
+      </div>
+    </footer>
   </main>
-
-
 </body>
