@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static HTML Site Boilerplate</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <picture>
+          <source srcset="static/logo.webp" type="image/webp" />
+          <source srcset="static/logo.png" type="image/png" />
+          <img src="static/logo.png" alt="logo" class="navbar-brand" />
+        </picture>
+        <ul class="nav ml-auto">
+          <li class="nav-item ">
+            <a href="#" class="nav-link text-uppercase text-light">log in</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-uppercase text-light">sign up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container h-100">
+      <div class="text-light d-flex justify-content-center align-items-center flex-column text-center" id="banner">
+        <h3 id="fixed-font">Find your Favourite</h3>
+        <h1 class="text-uppercase">recipes</h1>
+        <button data-aos="flip-left" type="button" class="btn btn-outline-light m-4">GET STARTED</button>
+        <p class="text-uppercase mt-3">or send your own recipes and <b><u> get rewarded</u></b>!</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="cards">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="150">
+            <div class="card border-0">
+              <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="circle d-flex justify-content-center align-items-center">
+                  <img src="static/burger.svg" alt="burger" />
+                </div>
+                <h4 class="text-uppercase pt-3 fixed-title">get inspired</h4>
+                <span class="line mb-3"></span>
+                <p class="text-center font-weight-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe cum tenetur
+                  quidem doloribus amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="250">
+            <div class="card border-0">
+              <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="circle d-flex justify-content-center align-items-center">
+                  <img src="static/money.svg" alt="money" />
+                </div>
+                <h4 class="text-uppercase pt-3 fixed-title">get reward</h4>
+                <span class="line mb-3"></span>
+                <p class="text-center font-weight-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe cum tenetur
+                  quidem doloribus amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="350">
+            <div class="card border-0">
+              <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="circle d-flex justify-content-center align-items-center">
+                  <img src="static/cook.svg" alt="cook" />
+                </div>
+                <h4 class="text-uppercase pt-3 fixed-title">get social</h4>
+                <span class="line mb-3"></span>
+                <p class="text-center font-weight-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe cum tenetur
+                  quidem doloribus amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aplication">
+      <div class="container d-flex align-items-end">
+        <div class="row w-100">
+          <div class="col-lg-6 order-md-2 order-sm-2 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="1000">
+            <picture>
+              <source srcset="static/iphone.webp" type="image/webp" />
+              <source srcset="static/iphone.png" type="image/png" />
+              <img src="static/iphone.png" alt="iphone" class="img-iphone" />
+            </picture>
+
+          </div>
+          <div class="col-lg-6 order-md-1 order-sm-1 order-1 order-lg-2 " data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="1000">
+            <div class="aplication__info">
+              <h4 class="fixed-title text-uppercase">introducing the fudi app</h4>
+              <span class="line mb-3"></span>
+              <p class="font-weight-light">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet
+                felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+                <br />
+                <br />
+                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
+                libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+                <br />
+                <br />
+                Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
+                malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                ante, a mattis massa. </p>
+              <picture>
+                <source srcset="static/app-store.webp" type="image/webp" />
+                <source srcset="static/app-store.png" type="image/png" />
+                <img src="static/app-store.png" alt="app-store" class="mr-2" />
+              </picture>
+              <picture>
+                <source srcset="static/google-play.webp" type="image/webp" />
+                <source srcset="static/google-play.png" type="image/png" />
+                <img src="static/google-play.png" alt="google-play" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
+                <picture>
+                  <source srcset="static/face.webp" type="image/webp" />
+                  <source srcset="static/face.png" type="image/png" />
+                  <img src="static/face.png" alt="face" />
+                </picture>
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
+                  Thanks so much for sharing!”</h4>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
+                <picture>
+                  <source srcset="static/face.webp" type="image/webp" />
+                  <source srcset="static/face.png" type="image/png" />
+                  <img src="static/face.png" alt="face" />
+                </picture>
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
+                  Thanks so much for sharing!”</h4>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center text-white d-flex justify-content-center align-items-center flex-column fixed-height">
+                <picture>
+                  <source srcset="static/face.webp" type="image/webp" />
+                  <source srcset="static/face.png" type="image/png" />
+                  <img src="static/face.png" alt="face" />
+                </picture>
+                <h4 class="font-weight-light pt-3">“I am so happy because I found this recipe, and it just made my
+                  life
+                  easier.
+                  Thanks so much for sharing!”</h4>
+                <p class="font-weight-light pt-2">- Michael Dawson, San Francisco, CA -</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cuisines">
+      <div class="container d-flex justify-content-center align-items-center container__title flex-column">
+        <h4 class="text-uppercase pt-3 fixed-title">browse by cuisines</h4>
+        <span class="line mb-3"></span>
+      </div>
+      <div class="cuisines__banner">
+        <div class="row w-100 m-0">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">127 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">italian</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">27 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white text-center">steak house</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">1,412 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">seafood</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">4,541 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">sushi</h3>
+          </div>
+          <div class="w-100 d-none d-md-block"></div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">893 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">mexican</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">7,437 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">chinese</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">576 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">pizza</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 item__grid d-flex flex-column justify-content-center align-items-center">
+            <p class="text-capitalize text-white">3,201 recipes</p>
+            <h3 class="text-uppercase font-weight-bold text-white">american</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container container__counter pt-3 pb-3 container__countup">
+        <div class="row w-100 pt-3 pb-3">
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
+            <h3 class="font-weight-bold">23,203</h3>
+            <p class="text-capitalize font-weight-light mb-0">recipes avaliable</p>
+          </div>
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
+            <h3 class="font-weight-bold">410,190</h3>
+            <p class="text-capitalize font-weight-light mb-0">active users</p>
+          </div>
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
+            <h3 class="font-weight-bold">891,640</h3>
+            <p class="text-capitalize font-weight-light mb-0">positive reviews</p>
+          </div>
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
+            <h3 class="font-weight-bold">56,120</h3>
+            <p class="text-capitalize font-weight-light mb-0">photos & vides</p>
+          </div>
+          <div class="p-3 col d-flex flex-column justify-content-center align-items-center">
+            <h3 class="font-weight-bold">3,182</h3>
+            <p class="font-weight-light mb-0">Spices and Herbs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="text-muted m-0 mr-3">&copy;2018 Fudi All Rights Reserved</p>
+        <p class="text-muted m-0">Pawel Miklas</p>
+      </div>
+    </footer>
+  </main>
+<script type="text/javascript" src="app.bundle.js"></script></body>
