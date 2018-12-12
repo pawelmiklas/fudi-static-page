@@ -5,7 +5,9 @@
 body {
     font-family: $fontMain;
 }
-
+main{
+    overflow: hidden;
+}
 .line {
     width: 90px;
     height: 1px;
@@ -21,6 +23,14 @@ body {
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+@supports (-webkit-appearance: none) {
+    header {
+        @include background-image("header-bg.webp",
+        50% 50%,
+        cover !important);
+    }
 }
 
 header {
