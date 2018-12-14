@@ -4,12 +4,15 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+// var ImageminPlugin = require('imagemin-webpack-plugin').default;
 const generateHTMLPlugins = () =>
 	glob.sync('./src/**/*.html').map(dir =>
 		new HTMLWebpackPlugin({
 			filename: path.basename(dir), // Output
 			template: dir, // Input
+			minify: {
+				collapseWhitespace: true
+			}
 		}));
 
 module.exports = {
@@ -29,12 +32,35 @@ module.exports = {
 			},
 			{
 				test: /\.(sass|scss|css)$/,
-				use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+				use: ['style-loader', 'css-loader?url=false', 'resolve-url-loader', 'postcss-loader', 'sass-loader'],
 			},
 			{
 				test: /\.html$/,
 				loader: 'raw-loader',
 			},
+			// {
+			// 	test: /\.(gif|png|jpe?g|svg)$/i,
+			// 	use: [
+			// 		{
+			// 			loader: 'file-loader',
+			// 			options: {
+			// 				name: '[name].[ext]',
+			// 				outputPath: 'static/'
+			// 			}
+			// 		},
+			// 		{
+			// 			loader: 'image-webpack-loader',
+			// 			options: {
+			// 				mozjpeg: {
+			// 					quality: 65
+			// 				},
+			// 				pngquant: {
+			// 					quality: '65-90'
+			// 				}
+			// 			}
+			// 		},
+			// 	]
+			// },
 		],
 	},
 	plugins: [

@@ -1,5 +1,5 @@
 @mixin background-image($img, $background-position, $background-size) {
-    background-image: url('#{$path--rel}/#{$img}');
+    background-image: url('./static/#{$img}');
     background-repeat: no-repeat;
     background-position: $background-position;
     background-size: $background-size;
